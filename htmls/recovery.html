@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recuperar contraseña</h1>
+        <form id="recovery-form" >
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <br>
+            <div>
+                <label>si el e-mail se encuentra registrado se
+                       enviara un link para continuar con la recuperacion de su contraseña.
+                </label>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <div id="error-message" class="error-message"></div>
+        <div id="success-message" class="success-message"></div>
+</html>
