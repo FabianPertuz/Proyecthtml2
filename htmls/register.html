@@ -22,9 +22,9 @@
             <input type="text" id="phone" name="phone" placeholder="Teléfono" required>
             <br>
             <br>
-            <label for="adress"></label>
-            <select id="userType" name="userType" required>
-                <option value="admin">Ciudad</option>
+
+            <select id="userType" name="userType" placeholder="Ciudad" required>
+                <option value="user">Ciudad</option>
                 <option value="user">Bucaramanga</option>
                 <option value="user">Cali</option>
                 <option value="user">Medellin</option>
@@ -34,12 +34,13 @@
                 <option value="user">Pereira</option>
                 <option value="user">Cúcuta</option>
                 <option value="user">Manizales</option>
-                    
+            <select>
             <br>
             <br>
-            <button type="submit">GUARDAR</button>
+                <button type="submit" class="btn" onclick="location.href='create.html'" >GUARDAR</button>
+            </select>
         </form>
         <div id="error-message" class="error-message"></div>
         <div id="success-message" class="success-message"></div>
-
+</body>
 </html>

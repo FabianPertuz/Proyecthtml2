@@ -5,5 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>!Hola John Doe!</h1>
+        <div>
+            <a href="login.html" class="btn">Cerrar Sesión</a>
+        </div>
+        <h2>Busqueda De Vuelos</h2>
+        <input type="checkbox" id="roundTrip" name="roundTrip">
+            <label for="roundTrip">Solo Ida</label>
+        <br>
+        <br>
+        <form id="flightForm">
+            <div class="form-group">
+                <input type="text" id="origin" name="origin" placeholder="Origen" required>
+            <br>
+            <br>
+            <div class="form-group">
+                <input type="text" id="destination" name="destination" placeholder="Destino" required>
+            <br>
+            <br>
+                <div class="form-group">
+                <input type="date" id="departureDate" name="departureDate" required>
+            <br>
+            <br>
+                <div class="form-group">
+                <input type="date" id="returnDate" name="returnDate" required>
+            </div>
+            <br>
+            <button type="submit" class="btn" onclick="location.href='avilable.html'">Buscar</button>
 
+        
 </html>
