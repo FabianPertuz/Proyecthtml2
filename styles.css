@@ -1,0 +1,357 @@
+@media only screen and (max-width: 767px) {
+  :root {
+    --primary: #0056b3;      
+    --primary-dark: #003d82;
+    --secondary: #e31937;   
+    --accent: #ffc107;        
+    --light: #f8f9fa;
+    --dark: #212529;
+    --gray: #6c757d;
+    --light-gray: #e9ecef;
+    --border-color: #dee2e6;
+    --gradient-start: #0056b3;
+    --gradient-end: #003d82;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  body:not(.login-page) .gradient-header {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  body:not(.login-page) .gradient-header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+
+  body:not(.login-page) .gradient-header p {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+    opacity: 0.9;
+    font-style: italic;
+  }
+
+ 
+  body:not(.login-page) .container {
+    padding-top: 15px;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.brand-header {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.brand-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.brand-header p {
+  color: var(--gray);
+  font-style: italic;
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+
+/* ===== Buttons & Links ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--gray);
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.logout-link {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.flight-table th,
+.flight-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.flight-table th {
+  background-color: var(--primary);
+  color: white;
+}
+
+.flight-item {
+  background: white;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.flight-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flight-route {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.flight-time {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.flight-number {
+  background-color: var(--light-gray);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.flight-price {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-ontime {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-landed {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 25px 0;
+  position: relative;
+}
+
+.divider::before {
+  content: "---";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 0 10px;
+  color: var(--gray);
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .brand-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .flight-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+
+    body.login-page .gradient-header {
+        display: none;
+    }
+    
+    body.login-page .container {
+        padding-top: 0;
+    }
+    
+
+    body:not(.login-page) .desktop-only {
+        display: block !important;
+    }
+    
+    body:not(.login-page) .mobile-only {
+        display: none !important;
+    }
+@media only screen and (min-width: 768px) {
+  body::before {
+    content: "Desktop version not supported. Please view on mobile.";
+    display: block;
+    padding: 20px;
+    background: #ffcccc;
+    color: #cc0000;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .container {
+    display: none;
+  }
+}
+    }

@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Check In</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-        <h1>!Hola John Doe!</h1>
+  <header class="gradient-header">
+    <h1>ACME AIR</h1>
+    <p>Flying to your dreams</p>
+  </header>
+  <div class="container">
+  </div>
+</body>
+<body>
+    <div class="container">
+        <h1>¡Hola John Doe!</h1>
         <div>
             <a href="login.html" class="btn">Cerrar Sesión</a>
         </div>
-    <div class="container">
         <h1>Check In</h1>
-        <form id="checkinForm" action="menu.html" method="POST"></form>
-                <th>Flight Number</th>
-                <th>Departure</th>
-                <th>Arrival</th>
-                <th>Date</th>
-                 <th>Time</th> 
-                 <br>
-                 <br>
-            <div class="checkinFormgroup">
-                <input type="text" id="username" name="username" placeholder="Nombre Completo" required>
+        <form id="checkinForm" action="menu.html" method="POST">
+            <table>
+                <tr>
+                    <th>Flight Number</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </table>
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Nombre Completo">
             </div>
-            <br>
-            <div class="checkinFormgroup">
-                <input type="password" id="password" name="phonenumber" placeholder="No. Telefono Celular" required>
+            <div class="form-group">
+                <input type="tel" id="phonenumber" name="phonenumber" placeholder="No. Telefono Celular">
             </div>
-            <br> 
-            <button type="submit" class="btn" onclick="location.href='menu.html'">GUARDAR</button>
+            <button type="submit" class="btn">GUARDAR</button>
+        </form>
+    </div>
+</body>
 </html>
